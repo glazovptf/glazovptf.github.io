@@ -16,7 +16,7 @@
 
 .city{
     height: 350px;
-    width: 4000%;
+    width: 40000%;
     background-image: url("fon3.png");
     position: absolute;
     left: 0;
@@ -26,9 +26,9 @@
     z-index: 1;
 
     background-repeat: repeat-x;
-     -webkit-animation: city 250s linear infinite;
-    -ms-animation: city 250s linear infinite;
-    -moz-animation: city 250s linear infinite;
+     -webkit-animation: city 2500s linear infinite;
+    -ms-animation: city 2500s linear infinite;
+    -moz-animation: city 2500s linear infinite;
 }
 
 @keyframes city{
