@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.world{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("img/sky.jpg");
+    background-size: cover;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.city{
+    height: 350px;
+    width: 4000%;
+    background-image: url("fon3.png");
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 69px;
+    display: block;
+    z-index: 1;
+
+    background-repeat: repeat-x;
+     -webkit-animation: city 250s linear infinite;
+    -ms-animation: city 250s linear infinite;
+    -moz-animation: city 250s linear infinite;
+}
+
+@keyframes city{
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.car{
+    width: 350px;
+    position: absolute;
+    left: 50%;
+    bottom: 100px;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.car img{
+    width: 100%;
+    animation: car 1s linear infinite;
+}
+
+@keyframes car{
+    100%{
+        transform: translateY(-0px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    0%{
+        transform: translateY(-0px);
+    }
+}
